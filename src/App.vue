@@ -7,7 +7,7 @@
       <FuturamaCard 
         v-for="character in characters" 
         :key="character.id" 
-        :character="character" 
+        :character="character"
       />
     </div>
   </div>
@@ -45,10 +45,17 @@ export default {
   font-family: Arial, sans-serif;
 }
 
+h1{
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: purple;
+}
+
 .cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  grid-template-rows: repeat(3, auto);  /* 3 linhas */
   gap: 20px;
+  padding: 20px;
 }
 </style>

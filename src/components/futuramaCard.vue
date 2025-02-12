@@ -10,31 +10,33 @@ export default {
   props: {
     character: Object,
   },
+  
   created() {
-    console.log("Recebendo personagem no FuturamaCard:", this.character);
+    // console.log("Recebendo personagem no FuturamaCard:", this.character);
   }
 };
 </script>
 
 <style scoped>
 .card {
-  width: 250px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  width: 150px;
+  padding: 0;
   text-align: center;
-  background-color: #f8f8f8;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+  width: 150px;
+  height: 150px;
 }
 
 .card h2 {
-  font-size: 1.2rem;
-  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: 900;
+  color: purple;
+  margin: 0;
+  text-align: start;
 }
 </style>
